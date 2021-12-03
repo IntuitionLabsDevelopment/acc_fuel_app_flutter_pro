@@ -1,4 +1,4 @@
-package com.example.acc_fuel_app_flutter_pro
+package com.accfuelcalcpro.accfuelcalculator
 
 import io.flutter.embedding.android.FlutterActivity
 
