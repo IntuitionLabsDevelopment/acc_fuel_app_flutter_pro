@@ -1,4 +1,5 @@
-import 'package:acc_fuel_app_flutter_pro/constants/app_constants.dart' as constants;
+import 'package:acc_fuel_app_flutter_pro/constants/app_constants.dart'
+    as constants;
 
 String getTrackIdFromName(String name) {
   if (constants.tracks.containsValue(name)) {
@@ -15,4 +16,12 @@ String getTrackNameFromId(String id) {
     throw Error();
   }
   return name;
+}
+
+List<String> getAlphabeticalTrackIds() {
+  List<String> alphabeticalTrackNames = List.from(constants.tracks.values)
+    ..sort((a, b) => a.compareTo(b));
+  List<String> trackIds = List.from(
+      alphabeticalTrackNames.map((trackName) => getTrackIdFromName(trackName)));
+  return trackIds;
 }
