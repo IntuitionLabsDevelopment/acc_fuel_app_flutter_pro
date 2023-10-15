@@ -5,7 +5,6 @@ import 'package:acc_fuel_app_flutter_pro/widgets/buttons/dropdown_button.dart';
 import 'package:acc_fuel_app_flutter_pro/widgets/buttons/full_width_elevated_button.dart';
 import 'package:acc_fuel_app_flutter_pro/widgets/buttons/github_button.dart';
 import 'package:acc_fuel_app_flutter_pro/widgets/buttons/leave_review_button.dart';
-import 'package:acc_fuel_app_flutter_pro/widgets/buttons/purchase_pro_version.dart';
 import 'package:acc_fuel_app_flutter_pro/widgets/selections_section.dart';
 import 'package:flutter/material.dart';
 import 'package:acc_fuel_app_flutter_pro/constants/app_constants.dart'
@@ -20,7 +19,7 @@ void migrationDialog(BuildContext context) async {
       content: const SizedBox(
           height: 200,
           child: Scrollbar(
-            isAlwaysShown: true,
+            thumbVisibility: true,
             radius: Radius.circular(5),
             child: SingleChildScrollView(
                 child: Text(constants.thankYouForInstalling)),
